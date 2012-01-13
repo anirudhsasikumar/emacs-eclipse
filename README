@@ -1,0 +1,5 @@
+Eclipse is good. But as a die hard Emacs fan, Emacs is the IDE for me. I needed a better way to quickly switch back and forth between Emacs and Eclipse. So I cooked up an Eclipse plugin that does exactly that. Click a button in the toolbar and the current active window in Eclipse will open in Emacs. It will also try to position the cursor at the same place it was in the Eclipse window. Also, you can configure the plug-in to execute any lisp code after doing this.
+
+This plug-in uses gnuserve (available at Andy Norman's site and at meltin.net) and requires gnuclientw to be in the PATH variable. You can also point to the full path to gnuclientw in the plugin's preferences page.
+
+Original blog post: http://anirudhsasikumar.net/blog/2009.05.01.html

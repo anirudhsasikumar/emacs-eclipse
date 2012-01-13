@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Emacs Eclipse Plug-in
+Bundle-SymbolicName: com.anirudh.emacseclipse;singleton:=true
+Bundle-Version: 1.0.1
+Bundle-Activator: com.anirudh.emacseclipse.Activator
+Bundle-Vendor: Anirudh Sasikumar
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.editors;bundle-version="3.4.0",
+ org.eclipse.jface.text;bundle-version="3.4.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

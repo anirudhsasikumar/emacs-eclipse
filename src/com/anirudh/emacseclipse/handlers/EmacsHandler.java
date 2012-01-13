@@ -57,9 +57,20 @@ public class EmacsHandler
     
     public void emacsGotoChar(int start) 
     {
-        start++; // Emacs used 1-based numbering
-        command.append("(goto-char "+start+")"+
-                       "(recenter)");
+        //start++; // Emacs used 1-based numbering
+        /* Fix contributed by Rick Watson for finding
+           correct offset in the buffer - Use it if
+           the elisp function has been loaded, else 
+           rely on goto-char:
+
+           (if (fboundp 'eclipse-goto-offset)
+              (eclipse-goto-offset start)
+            (goto-char (+ 1 start)))
+        */
+        command.append("(if (fboundp 'eclipse-goto-offset)");
+        command.append("(eclipse-goto-offset " + start + ")");
+        command.append("(goto-char (+ 1 " + start + ")))");
+        command.append("(recenter)");
     }
     
     public void emacsGotoLine(int line) 

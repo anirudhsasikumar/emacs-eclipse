@@ -3,6 +3,7 @@
  * .as files). */
 
 /* Author: Anirudh Sasikumar http://anirudhs.chaosnet.org/ */
+/* Migration to emacsclientw: Andreas Schmidt http://www.binpot.net */
 
 /* Emacs Eclipse Plugin. Copyright (C) 2009 Anirudh Sasikumar */
 
@@ -30,6 +31,9 @@ import org.osgi.framework.BundleContext;
 
 /**
  * The activator class controls the plug-in life cycle
+ * 
+ * @author Anirudh Sasikumar
+ * @author Andreas Schmidt
  */
 public class Activator extends AbstractUIPlugin {
 
@@ -45,7 +49,7 @@ public class Activator extends AbstractUIPlugin {
 	public static final String POSTLISP_PREFERENCE = "postlisp";
 
 	//The default values for the preferences
-	public static final String DEFAULT_GNUCLIENT_PREFERENCE = "gnuclientw";
+	public static final String DEFAULT_GNUCLIENT_PREFERENCE = "emacsclientw";
 	public static final String DEFAULT_SEXPR_PREFERENCE = "-e";
 	public static final String DEFAULT_POSTLISP_PREFERENCE = "(raise-frame)";
 

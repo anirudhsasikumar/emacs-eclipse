@@ -5,20 +5,16 @@ will also try to position the cursor at the same place it was in the
 Eclipse window. You can configure the plug-in to execute any lisp code
 after doing this.
 
-This plug-in uses gnuserve (available at Andy Norman's site and at
-meltin.net) and requires gnuclientw to be in the PATH variable. You
-can also point to the full path to gnuclientw in the plugin's
-preferences page.
+The original plugin used gnuserve but has been ported to emacsclient
+for simplifying the installation.
 
 Original blog post: http://anirudhsasikumar.net/blog/2009.05.01.html
 
 * Installation
 
-1. Make sure you have gnuserve installed.
+1. Drop emacs-eclipse-plugin_1.3.0.jar in eclipse/plugins.jar.
 
-2. Drop emacs-eclipse-plugin_1.2.0.jar in eclipse/plugins.jar.
-
-3. Copy eclipse-goto-offset.el to your hard disk and load it on
+2. Copy eclipse-goto-offset.el to your hard disk and load it on
 startup by editing your .emacs file:
 
 (load "~/elisp/eclipse-goto-offset.el")
@@ -26,11 +22,16 @@ startup by editing your .emacs file:
 The plugin will work without the second step, but character
 positioning may not be accurate without it.
 
-4. If gnuclientw is not in your PATH variable, go to the plugin
+3. If emacsclientw is not in your PATH variable, go to the plugin
 settings page in Eclipse and fill in the full absolute path to
-gnuclientw.
+emacsclientw which should be in the bin folder of your Emacs
+installation.
 
-Tested on Eclipse 3.5, 3.6; Emacs 22.1.
+4. Enable server mode in Emacs by either running the command server-start
+in an existing Emacs process or run Emacs using the command-line option '--daemon'
+For further information please see: http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html
+
+Tested on Eclipse 3.5, 3.8; Emacs 24.3.
 
 * Contributors
 

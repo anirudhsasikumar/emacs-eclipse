@@ -43,6 +43,7 @@ import com.anirudh.emacseclipse.Activator;
  * 
  * @author Anirudh Sasikumar
  * @author Andreas Schmidt
+ * @version 1.3.0
  */
 public class EmacsHandler 
 {

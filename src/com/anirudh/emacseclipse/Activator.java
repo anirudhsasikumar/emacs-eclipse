@@ -34,6 +34,7 @@ import org.osgi.framework.BundleContext;
  * 
  * @author Anirudh Sasikumar
  * @author Andreas Schmidt
+ * @version 1.3.0
  */
 public class Activator extends AbstractUIPlugin {
 

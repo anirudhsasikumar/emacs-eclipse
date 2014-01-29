@@ -12,7 +12,7 @@ Original blog post: http://anirudhsasikumar.net/blog/2009.05.01.html
 
 * Installation
 
-1. Drop emacs-eclipse-plugin_1.3.0.jar in eclipse/plugins.jar.
+1. Copy com.anirudh.emacseclipse_1.3.0.jar into the eclipse/plugins folder.
 
 2. Copy eclipse-goto-offset.el to your hard disk and load it on
 startup by editing your .emacs file:
